@@ -20,8 +20,8 @@ public class EmployeeResource {
         return employeeRepository.findAll();
     }
 
-    @PostMapping(produces = {"applicServiceation/json"})
-    public void add(@RequestBody Employee employee) {
+    @PostMapping(produces = {"application/json"})
+    public void save(@RequestBody Employee employee) {
         employeeRepository.save(employee);
     }
 }
